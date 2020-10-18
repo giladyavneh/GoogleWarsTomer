@@ -384,7 +384,8 @@ moab.innerText+=` ${ammo.moab}`
 chooseBaseButton.addEventListener("click", () => {
   var script = document.createElement("script");
   script.src =
-    "https://maps.googleapis.com/maps/api/js?key=AIzaSyBeetvrTBSQzxCZ1fYBneazXorIAZp9PKQ&callback=initMap&libraries=geometry";
+    "https://maps.googleapis.com/maps/api/js?key=<APIKEY>&callback=initMap&libraries=geometry";
+  
   script.defer = true;
   document.head.appendChild(script);
 });
